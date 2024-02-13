@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 7px 100px;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+
+
+.hlw{
+	color: #ffffff;
+	font-size: 50px;
+	padding-left: 10px;
+	line-height: 59px;
+}
+
+.hlw span{
+	display: inline;
+	background-color: #0000006d;
+	padding: 4px 10px;
+	color: #FFFFFF;
+	font-size: 45px;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone; 
+	border-radius: 5px;
+	
+}
+
+.prd {
+	display: inline;
+	background-color: #0000006d;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	font-size: 17px;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone; 
+	border-radius: 5px;
+}
+
+
+.logo{
+	font-size: 25px;
+	color: white;
+	user-select: none;
+	transform: translate(-40px)
+}
+
+.navigation .navig{
+	position: relative;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation .navig::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	border-radius: 5px;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+
+.navigation .navig:hover::after{
+	transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+	padding: 10px 20px;
+	background: transparent;
+	border: 0px solid #fff;
+	outline: none;
+	border-radius: 6px ;
+	cursor: pointer;
+	font-size: 17px;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 60px;
+	margin-right: -60px;
+	transition: .5s;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.navigation .btnLogin-popup:hover{
+	background: #fff;
+	color: #000;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #4a4a4a;
+	font-family: Helvetica, sans-serif;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.image-slider{
+	min-height: 30em;
+	height: 100vh;
+	position: relative;
+	background-image: url("img/bg1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: 0.8s;
+}
+
+.image-slider *{
+	box-sizing: border-box;
+}
+
+.caption{
+	background: linear-gradient(
+		rgba(0,0,0,0)
+	);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 4em 1em 2em 1em;
+	text-align: center;
+}
+
+.caption h1{
+	margin: 0;
+	color: #fff;
+}
+
+p{
+	color: #ffffff;
+	background: none;
+}
+
+.arrow-left,
+.arrow-right{
+	background: #000000;
+	position: absolute;
+	top: 40%;
+	width: 2.8em;
+	height: 2.8em;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.5s;
+	color: #fff;
+}
+
+.arrow-left:hover,
+.arrow-right:hover{
+	background: #ffffff;
+	color: #000000;
+}
+
+.arrow-left{
+	left: 1em;
+}
+
+.arrow-right{
+	right: 1em;
+}
+
+.image-fade{
+	animation: imgFade 0.5s ease-in-out;
+}
+
+@keyframes imgFade{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+
+.button{
+	background-color:#0000003d;
+	color: white;
+	margin: 60px;
+	border: 1.5px solid white;
+	padding: 8px 10px;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.5s;
+	font-size: 15px;
+}
+.button:hover{
+	background: #fff;
+	color: #000;
+}
+.button span{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.button span:after{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.button:hover span{
+	padding-right: 25px;
+}
+
+.button:hover span:after{
+	opacity: 1;
+	right: 0;
+}
+.hero {
+	background-image: url('https://phonoteka.org/uploads/posts/2021-05/1620119761_16-phonoteka_org-p-skulptura-fon-18.jpg');
+	background-size: contain;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ffffff;
+}
+
+.hero h1 {
+	font-size: 4rem;
+	margin: 0;
+}
+
+.hero p {
+	font-size: 1.5
+}
+
+
+footer{
+	position: relative;
+	width: 100%;
+	background: #000;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer .social_icon{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+}
+
+footer .social_icon li{
+	list-style: none;
+}
+
+footer .social_icon li a{
+	font-size: 20px;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+	transform: translateY(-10px);
+}
+
+footer p{
+	text-align: center;
+	font-size: 11px;
+}
+
