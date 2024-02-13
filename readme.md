@@ -1,3 +1,3 @@
 # Wonderspot
 
-Site about attractions
+Site about adttractions
